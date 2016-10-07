@@ -7,25 +7,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!-- ===========================
-    THEME INFO
-    =========================== -->
-	<meta name="description" content="CVstrap is another Free minimal CV HTML theme by EvenFly built with Bootstrap 3.3.0. and released under CC-3.0 license.">
-	<meta name="keywords" content="curriculum vitae, cv, one page, onepage, bootstrap, responsive, resume, timeline, free cv">
-	<meta name="author" content="Mamun Srizon">
-
-	<!-- ===========================
     SITE TITLE
     =========================== -->
-	<title>CVstrap - Free Bootstrap CV Template by EvenFly</title>
-
-	<!-- ===========================
-    FAVICONS
-    =========================== -->
-	<link rel="icon" href="img/favicon.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="img/apple-touch-icon-ipad-retina.png" />
-	<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-iphone-retina.png" />
-	<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-ipad.png" />
-	<link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon-iphone.png" />
+	<title>Luc Jaulmes - PhD student at BSC</title>
 
 	<!-- ===========================
     STYLESHEETS
@@ -39,6 +23,7 @@
     =========================== -->
 	<link href='https://fonts.googleapis.com/css?family=Kristi|Alegreya+Sans:300' rel='stylesheet' type='text/css'>
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/academicons.css" />
 
 
 	<!--[if IE]>
@@ -47,114 +32,207 @@
     <![endif]-->
 </head>
 
-<body>
-	<div class="container">
+<body data-spy="scroll" data-target="#navbar">
+	<div id="wrap">
 		<!-- ===========================
         HEADER
         ============================ -->
 		<div id="header" class="row">
-			<div class="col-sm-2">
-				<img class="propic" src="img/bappy.jpg" alt="">
+			<div class="col-xs-4 col-sm-2">
+				<img class="propic" src="https://avatars2.githubusercontent.com/u/22683052" alt="profile picture">
 			</div>
 			<!-- photo end-->
 
-			<div class="col-sm-10">
+			<div class="col-sm-8">
 				<div class="cv-title">
 					<div class="row">
-						<div class="col-sm-7">
-							<h1>Towkir A. Bappy</h1>
-						</div>
-						<div class="col-sm-5 text-right dl-share">
-							<!-- AddToAny BEGIN -->
-							<a class="a2a_dd btn btn-default" href=""><span class="fa fa-share "></span> Share</a>
-							<script type="text/javascript">
-								var a2a_config = a2a_config || {};
-								a2a_config.linkname = "Minimal CV by EvenFly";
-								a2a_config.num_services = 6;
-								a2a_config.prioritize = ["facebook", "twitter", "google_plus", "linkedin", "pinterest", "email"];
-
-							</script>
-							<script type="text/javascript" src="https://static.addtoany.com/menu/page.js"></script>
-							<!-- AddToAny END -->
-
-							<a class="btn btn-success" href=""><span class="fa fa-download"></span> Download</a>
+						<div class="col-sm-18">
+							<h1>Luc Jaulmes <small>PhD student at the <a href="https://www.bsc.es">Barcelona Supercomputing Center</a></small></h1>
 						</div>
 					</div>
-					<h2>UI/UX Designer</h2>
 				</div>
 				<!-- Title end-->
+
+				<div class="row">
+					<h4>My main research interests are <strong>fault-tolerance</strong>, <strong>computer architecture</strong>, <strong>high-performance computing</strong> and <strong>programming models</strong>.</h4>
+				</div>
 
 				<!-- ===========================
                 SOCIAL & CONTACT
                 ============================ -->
 				<div class="row">
-					<div class="col-sm-4">
-						<ul class="list-unstyled">
-							<li><a href=""><span class="social fa fa-home"></span>EvenFly.com</a>
-							</li>
-							<li><a href=""><span class="social fa fa-skype"></span>+88 0123 45678</a>
-							</li>
-							<li><a href="mailto:support@evenfly.com"><span class="social fa fa-envelope-o"></span>me@mail.com</a>
-							</li>
-						</ul>
+					<div class="col-xs-10 col-sm-3 col-md-4">
+						<a href="https://www.bsc.es/about-bsc/staff-directory/jaulmes-luc"><span class="social fa fa-home"></span>BSC</a>
 					</div>
-					<!-- social 1st col end-->
 
-					<div class="col-sm-4">
-						<ul class="list-unstyled">
-							<li><a href=""><span class="social fa fa-facebook"></span>Facebook</a>
-							</li>
-							<li><a href=""><span class="social fa fa-twitter"></span>Twitter</a>
-							</li>
-							<li><a href=""><span class="social fa fa-linkedin"></span>Linkedin</a>
-							</li>
-						</ul>
+					<div class="col-xs-10 col-sm-3 col-md-4">
+						<a href="https://github.com/LucJaulmes"><span class="social fa fa-github"></span>GitHub</a>
 					</div>
-					<!-- social 2nd col end-->
 
-					<div class="col-sm-4">
-						<ul class="list-unstyled">
-							<li><a href=""><span class="social fa fa-behance"></span>Behance</a>
-							</li>
-							<li><a href=""><span class="social fa fa-dribbble"></span>Dribbble</a>
-							</li>
-							<li><a href=""><span class="social fa fa-instagram"></span>Instagram</a>
-							</li>
-						</ul>
+					<div class="col-xs-10 col-sm-6 col-md-4">
+						<a href="https://scholar.google.com/citations?user=S1UQm-sAAAAJ"><span class="social fa ai ai-google-scholar"></span>Google&nbsp;Scholar</a>
 					</div>
-					<!-- social 3rd col end-->
+
+					<div class="col-xs-10 col-sm-3 col-md-4">
+						<a href="http://dblp.uni-trier.de/pers/j/Jaulmes:Luc"><img src="img/dblp.png" width="20" />dblp</a>
+					</div>
+
+					<div class="col-xs-10 col-sm-3 col-md-4">
+						<a href="https://www.hipeac.net/~lucjaulmes/"><img src="img/hipeac.png" width="20" />HiPEAC</a>
+					</div>
+
+					<div class="col-xs-10 col-sm-6 col-md-4">
+						<a href="mailto:luc.jaulmes@bsc.es"><span class="social fa fa-envelope-o"></span>luc.jaulmes@bsc.es</a>
+					</div>
 				</div>
 				<!-- header social end-->
+
+				<div class="row">
+					<div class="col-sm-12">
+						<p><a href="https://scholar.google.com/citations?user=S1UQm-sAAAAJ"><span class="social fa fa-road"></span>Jordi Girona, 29, Nexus II office 219, 08034, Barcelona</a></p>
+					</div>
+				</div>
+				<!-- -->
 			</div>
 			<!-- header right end-->
+
+			<div class="col-xs-4 col-sm-2 col-md-2 text-center">
+				<p>Affiliations</p>
+				<p><a title="BSC" href="https://www.bsc.es"><img alt="BSC logo" src="img/bsc.svg" alt="profile picture"></a></p>
+				<p><a title="UPC" href="https://www.upc.edu"><img alt="UPC logo" src="img/upc.png" alt="profile picture"></a></p>
+				<p><a title="RoMoL" href="https://www.bsc.es/romol"><img alt="RoMoL logo" src="img/romol.svg" alt="profile picture"></a></p>
+				</p>
+			</div>
 		</div>
 		<!-- header end-->
 
 		<hr class="firsthr">
+		<nav id="navbar" class="navbar navbar-default navbar-fixed-top collapse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+					<a class="navbar-brand" href="#"><span><img class="propic" src="https://avatars2.githubusercontent.com/u/22683052" alt="profile picture" width="40" /></span><strong>Luc Jaulmes</strong><small>, PhD student at BSC</small></a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a id="top" href="#header">Top</a></li>
+						<li><a href="#publications">Publications</a></li>
+						<li><a href="#education">Education</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 
 		<!-- ===========================
-        BODY LEFT PART
-        ============================ -->
+		BODY LEFT PART
+		============================ -->
 		<div class="col-md-8 mainleft">
-			<div id="statement" class="row mobmid">
+
+			<div id="publications" class="row mobmid">
 				<div class="col-sm-1">
-					<span class="secicon fa fa-user"></span>
+					<span class="secicon fa fa-file-text"></span>
 				</div>
 				<!--icon end-->
 
-				<div class="col-sm-11">
-					<h3>Personal statement </h3>
-					<p>Hi, I am Bappy from Bangladesh.Adipiscing elit. Nullam dapibus vehicula condimentum. Curabitur elit enim, accumsan vitae tristique ut, mollis at orci. Fusce cursus interdum neque nec aliquam. Proin turpis leo, laoreet non ultricies non, dictum nec nulla. Duis vitae nisi eu odio Adipiscing elit. Nullam dapibus vehicula condimentum. Curabitur elit enim, accumsan.</p>
+				<div class="col-sm-11 publication_list">
+					<h3>Publications</h3>
 
-					<p>Consectetur adipisicing elit. Hic labore, unde, ratione, itaque ducimus provident error similique qui, recusandae nam dignissimos autem. Sequi quas quis non, odit assumenda similique neque.</p>
+					<div class="row">
+						<div class="col-md-11">
+							<p><strong>Runtime-Aware Architectures</strong>, Marc Casas, Miquel Moretó, Lluc Alvarez, Emilio Castillo, Dimitrios Chasapis, Timothy Hayes, <strong>Luc Jaulmes</strong>, Oscar Palomar, Osman S. Unsal, Adrián Cristal, Eduard Ayguadé, Jesús Labarta, Mateo Valero, <em>Euro-Par 2015</em>
+								<a href="http://dx.doi.org/10.1007/978-3-662-48096-0_2">[10.1007/978-3-662-48096-0_2]</a>
+							</p>
+						</div>
+					</div>
 
-					<p class="signature">TowkirAhmed</p>
+					<hr>
+
+					<div class="row">
+						<div class="col-md-11">
+							<p><strong>Exploiting Asynchrony Recoveries for DUE in Ierative Solvers</strong>, <strong>Luc Jaulmes</strong>, Marc Casas, Miquel Moretó, Eduard Ayguadé, Jesús Labarta, Mateo Valero, <em>SC 2015</em>
+								<a href="http://dx.doi.org/10.1145/2807591.2807599">[10.1145/2807591.2807599]</a>
+								<br />
+								<span class="fa fa-trophy"></span>&nbsp;<strong>Best paper finalist</strong> &nbsp;
+								<a href="http://sc15.supercomputing.org/conference-program/technical-program/papers/best-student-paper-and-paper-finalists.html"><span class="fa fa-external-link"></span></a>
+							</p>
+						</div>
+					</div>
+
+					<hr>
+
+					<div class="row">
+						<div class="col-md-11">
+							<p><strong>Fast modulo 2<sup>n</sup>-1 and 2<sup>n</sup>+1 adder using carry-chain on FPGA</strong>, Laurent-Stephane Didier, <strong>Luc Jaulmes</strong>, <em>ACSSC 2013</em>
+								<a href="http://dx.doi.org/10.1109/ACSSC.2013.6810475">[10.1109/ACSSC.2013.6810475]</a>
+							</p>
+						</div>
+					</div>
+
+					<hr>
+
+					<div class="row">
+						<div class="col-md-11">
+							<p><strong>Runtime-Aware Architectures</strong>, Marc Casas, Miquel Moretó, Lluc Alvarez, Emilio Castillo, Dimitrios Chasapis, Timothy Hayes, <strong>Luc Jaulmes</strong>, Oscar Palomar, Osman S. Unsal, Adrián Cristal, Eduard Ayguadé, Jesús Labarta, Mateo Valero, <em>Euro-Par 2015</em>
+								<a href="http://dx.doi.org/10.1007/978-3-662-48096-0_2">[10.1007/978-3-662-48096-0_2]</a>
+							</p>
+						</div>
+					</div>
+
+					<hr>
+
+					<div class="row">
+						<div class="col-md-11">
+							<p><strong>Exploiting Asynchrony Recoveries for DUE in Ierative Solvers</strong>, <strong>Luc Jaulmes</strong>, Marc Casas, Miquel Moretó, Eduard Ayguadé, Jesús Labarta, Mateo Valero, <em>SC 2015</em>
+								<a href="http://dx.doi.org/10.1145/2807591.2807599">[10.1145/2807591.2807599]</a>
+								<br />
+								<span class="fa fa-trophy"></span>&nbsp;<strong>Best paper finalist</strong> &nbsp;
+								<a href="http://sc15.supercomputing.org/conference-program/technical-program/papers/best-student-paper-and-paper-finalists.html"><span class="fa fa-external-link"></span></a>
+							</p>
+						</div>
+					</div>
+
+					<hr>
+
+					<div class="row">
+						<div class="col-md-11">
+							<p><strong>Fast modulo 2<sup>n</sup>-1 and 2<sup>n</sup>+1 adder using carry-chain on FPGA</strong>, Laurent-Stephane Didier, <strong>Luc Jaulmes</strong>, <em>ACSSC 2013</em>
+								<a href="http://dx.doi.org/10.1109/ACSSC.2013.6810475">[10.1109/ACSSC.2013.6810475]</a>
+							</p>
+						</div>
+					</div>
+
 				</div>
-				<!--info end-->
+				<!--Job experiences end-->
 			</div>
-			<!--personal statement end-->
+			<!--Job experiences end-->
+			<hr />
 
-			<hr>
+
+		</div>
+		<!--left end-->
+
+		<!-- ===========================
+    SIDEBAR
+    =========================== -->
+		<div class="col-md-4 mainright">
+			<!--
+        <div class="row">
+            <div class="col-sm-1 col-md-2 mobmid">
+                <span class="secicon fa fa-calendar"></span>
+            </div>
+
+            <div class="col-sm-11 col-md-10">
+                <h3 class="mobmid">What's new </h3>
+
+            </div>
+        </div>
+        -->
 
 			<div id="education" class="row mobmid">
 				<div class="col-sm-1">
@@ -163,264 +241,60 @@
 				<!--icon end-->
 
 				<div class="col-sm-11">
-					<h3>Education &amp; Certification</h3>
+					<h3>Education</h3>
 
 					<div class="row">
-						<div class="col-md-9">
-							<h4>MSc in Design &amp; Fine Art</h4>
-							<p class="sub"><a href="">Ideal Institute of Science and Technology</a>
-							</p>
-							<p>Studying all aspect of Graphic Design Including Advertising Design, Branding, Copy Exhibition Design, Ilustration, Information Design, Packaging Design and Website Design</p>
-						</div>
-
-						<div class="year col-md-3">
-							<p>2009-2011</p>
+						<div class="col-md-11">
+							<h4>PhD in Computer Architecture<small>, est Feb. 2018</small></h4>
+							<p class="sub"><a href="https://www.bsc.es">Barcelona Supercomputing Center (BSC)</a> and <a href="www.upc.edu">Universitat Politecnica de Catalunya</a></p>
+							<p>On Exploiting Task-Based Programming Models for Resilience.</p>
 						</div>
 					</div>
 					<!--Education & Certification 1 end-->
 
-					<hr>
-
 					<div class="row">
-						<div class="col-md-9">
-							<h4>BSc in Graphic Design</h4>
-							<p class="sub"><a href="">Ideal Institute of Science and Technology</a>
-							</p>
-							<p>Studying all aspect of Graphic Design Including Advertising Design, Branding, Copy Exhibition Design, Ilustration, Information Design, Packaging Design and Website Design</p>
-						</div>
-
-						<div class="year col-md-3">
-							<p>2006-2009</p>
+						<div class="col-md-11">
+							<h4>MSc in Engineering: Information and Communication Technology<small>, 2015</small></h4>
+							<p class="sub">Double degree from <a href="https://www.kth.se/">KTH, Royal Institute of Technology</a>, Stockholm and <a href="https://www.polytechnique.edu/">École Polytechnique</a>, Paris</p>
+							<p>Computer Architecture</p>
 						</div>
 					</div>
 					<!--Education & Certification 2 end-->
-
-					<hr>
-
-					<div class="row">
-						<div class="col-md-9">
-							<h4>Diploma in Graphic Design</h4>
-							<p class="sub"><a href="">Ideal Institute of Science and Technology</a>
-							</p>
-							<p>Studying all aspect of Graphic Design Including Advertising Design, Branding, Copy Exhibition Design, Ilustration, Information Design, Packaging Design and Website Design</p>
-						</div>
-
-						<div class="year col-md-3">
-							<p>2003-2006</p>
-						</div>
-					</div>
-					<!--Education & Certification 3 end-->
 				</div>
 			</div>
 			<!--Education & Certifications end-->
-
-			<hr>
-
-			<!-- ===========================
-            JOB EXPERIENCES
-            ============================ -->
-			<div id="job" class="row mobmid">
-				<div class="col-sm-1">
-					<span class="secicon fa fa-briefcase"></span>
-				</div>
-				<!--icon end-->
-
-				<div class="col-sm-11">
-					<h3>Job Experiences</h3>
-
-					<div class="row">
-						<div class="col-md-9">
-							<h4>Lead Graphic Designer</h4>
-							<p class="sub"><a href="">Lifeview Media Ltd.</a>
-							</p>
-							<p>Adipiscing elit. Nullam dapibus vehicula condimentum. Curabitur elit enim, accumsan vitae tristique ut, mollis at orci. Fusce cursus interdum neque nec aliquam. Proin turpis leo, laoreet non ultricies non, dictum nec nulla.</p>
-						</div>
-
-						<div class="year col-md-3">
-							<p>2008 - present</p>
-						</div>
-					</div>
-					<!--Job 1 end-->
-
-					<hr>
-
-					<div class="row">
-						<div class="col-md-9">
-							<h4>Sr. Graphic Designer</h4>
-							<p class="sub"><a href="">Softech solution ltd.</a>
-							</p>
-							<p>Studying all aspect of Graphic Design Including Advertising Design, Branding, Copy Exhibition Design, Ilustration, Information Design, Packaging Design and Website Design</p>
-						</div>
-
-						<div class="year col-md-3">
-							<p>2006-2008</p>
-						</div>
-					</div>
-					<!--Job 2 end-->
-
-					<hr>
-
-					<div class="row">
-						<div class="col-md-9">
-							<h4>Jr. Graphic Designer</h4>
-							<p class="sub"><a href="">TwinTwin Design Solution</a>
-							</p>
-							<p>Studying all aspect of Graphic Design Including Advertising Design, Branding, Copy Exhibition Design, Ilustration, Information Design, Packaging Design and Website Design</p>
-						</div>
-
-						<div class="year col-md-3">
-							<p>2003-2006</p>
-						</div>
-					</div>
-					<!--Job 3 end-->
-				</div>
-				<!--Job experiences end-->
-			</div>
-			<!--Job experiences end-->
-		</div>
-		<!--left end-->
-
-		<!-- ===========================
-        SIDEBAR
-        =========================== -->
-		<div class="col-md-4 mainright">
-			<div class="row">
-				<div class="col-sm-1 col-md-2 mobmid">
-					<span class="secicon fa fa-magic"></span>
-				</div>
-				<!--icon end-->
-
-				<div class="col-sm-11 col-md-10">
-					<h3 class="mobmid">Technical skills </h3>
-
-					<p>Photoshop</p>
-					<div class="progress">
-						<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%">
-							<span class="sr-only">65% Complete (success)</span>
-						</div>
-					</div>
-					<!--skill end-->
-
-
-					<p>Illustrator</p>
-					<div class="progress">
-						<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%">
-							<span class="sr-only">85% Complete</span>
-						</div>
-					</div>
-					<!--skill end-->
-
-					<p>InDesign</p>
-					<div class="progress">
-						<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-							<span class="sr-only">60% Complete (warning)</span>
-						</div>
-					</div>
-					<!--skill end-->
-
-					<p>Flash</p>
-					<div class="progress">
-						<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
-							<span class="sr-only">30% Complete (danger)</span>
-						</div>
-					</div>
-					<!--skill end-->
-				</div>
-				<!--info end-->
-			</div>
-			<!--tech skills end-->
-
-			<hr>
-
-			<div class="row mobmid">
-				<div class="col-sm-1 col-md-2">
-					<span class="secicon fa fa-trophy"></span>
-				</div>
-				<!--icon end-->
-
-				<div class="col-sm-11 col-md-10 ">
-					<h3>Awards</h3>
-
-					<div class="award">
-						<h4>Best Designer 2012</h4>
-						<p class="sub"><a href="">Life View Media Ltd.</a></p>
-						<p>Studying all aspect of Graphic Design Including Advertising Design, Branding, Copy Exhibition Design, Ilustration.</p>
-					</div>
-					<!--1st award end-->
-
-					<div class="award">
-						<h4>Best Designer 2011</h4>
-						<p class="sub"><a href="">Alexa Design Solution</a></p>
-						<p>Studying all aspect of Graphic Design Including Advertising Design, Branding, Copy Exhibition Design, Ilustration, Information Design, Packaging Design and Website Design</p>
-					</div>
-					<!--1st award end-->
-				</div>
-				<!--awards end-->
-
-			</div>
-
-			<hr>
-
-			<div class="row ">
-				<div class="col-sm-1 col-md-2 mobmid">
-					<span class="secicon fa fa-quote-left"></span>
-				</div>
-				<!--icon end-->
-
-				<div class="col-sm-11 col-md-10 testimonials">
-					<h3 class="mobmid">Testimonials </h3>
-
-					<div class="row">
-						<blockquote>
-							<p>Sit amet, consectetur adipisicing elit. Fuga quidem ipsum maiores necessitatibus sint, porro temporibus labore, amet officia unde libero eligendi? Porro dolorum itaque, facere harum amet, rem libero.</p>
-						</blockquote>
-						<img src="img/mushfiq.jpg" alt="">
-						<h4>Mushfiqul Islam</h4>
-						<p>The UX Votch</p>
-					</div>
-					<!--1st testimonial end-->
-
-					<div class="row">
-						<blockquote>
-							<p>Consectetur adipisicing elit. Fuga quidem ipsum maiores necessitatibus sint, porro temporibus labore, unde libero eligendi? Porro dolorum itaque, facere harum amet, rem libero.</p>
-						</blockquote>
-						<img src="img/siblu.jpg" alt="">
-						<h4>E.A. Siblu</h4>
-						<p>The Jatir Vobisshot</p>
-					</div>
-					<!--2nd testimonial end-->
-
-					<div class="row">
-						<blockquote>
-							<p>Fuga quidem ipsum maiores necessitatibus sint, porro temporibus labore, amet officia unde libero eligendi? Porro dolorum itaque, facere harum amet, rem libero.</p>
-						</blockquote>
-						<img src="img/nasir.jpg" alt="">
-						<h4>Nasir Uddin</h4>
-						<p>The Cute Huzur</p>
-					</div>
-					<!--3rd testimonial end-->
-				</div>
-				<!--testimonials end-->
-			</div>
-			<!--tech skills end-->
 		</div>
 		<!--right end-->
-	</div>
-	<!--container end-->
 
-	<!-- ===========================
-    FOOTER
-    =========================== -->
-	<footer class="text-center">
-		<p>&copy; <a href="http:https://creativecommons.org/licenses/by/3.0/">CC-3.0</a>, Just another CV template by <a href="https://evenfly.com">EvenFly </a> - Designed by <a target="_blank" href="http://www.facebook.com/towkirahmedbappy">Towkir Ahmed Bappy</a>.
-		</p>
-	</footer>
+		<div class="clearfix"></div>
+
+		<!-- ===========================
+        FOOTER
+        =========================== -->
+		<footer class="text-center">
+			<p>Forked from <a href="http://www.facebook.com/towkirahmedbappy">Towkir Ahmed Bappy</a>'s CV Strap <a href="http://demo.evenfly.com/themes/cvstrap/">CVstrap</a> under <a href="http:https://creativecommons.org/licenses/by/3.0/">CC-3.0</a>.
+			</p>
+		</footer>
+
+	</div>
 
 	<!--necessary scripts and plugins-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-	<script src="js/jquery.nicescroll.min.js"></script>
-	<script src="js/evenfly.js"></script>
+	<script>
+		$('body').on('activate.bs.scrollspy', function ()
+		{
+			if ($("#navbar").find('.active').prev().size() == 0)
+			{
+				$("#navbar").collapse('hide');
+			}
+			else
+			{
+				$("#navbar").collapse('show');
+			}
+		}).scrollspy('refresh')
+
+	</script>
 </body>
 
 </html>
