@@ -10,6 +10,9 @@ img {
 	max-width: 100%
 }
 
+.authors {
+	font-family: 'Raleway', sans-serif;
+}
 
 a.navbar-brand {
 	display: inline-block
