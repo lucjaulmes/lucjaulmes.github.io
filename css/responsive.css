@@ -1,30 +1,26 @@
-@media only screen and (max-width: 980px) {
-	.dl-share {
-		display: none;
-	}
+/* default: < 576px */
 
-	.year {
-		text-align: left;
-	}
+#header {
+	padding-top: 10px;
 }
 
-@media only screen and (max-width: 480px) {
-	#header {
-		padding-top: 10px;
-	}
-	body {
-		padding: 0px 20px 0px 20px;
-	}
-
-	a.navbar-brand {
-		margin-top: -10px;
-	}
-	a.navbar-brand small {
-		display: none
-	}
+body {
+	padding: 0px 20px 0px 20px;
 }
 
-@media only screen and (min-width: 480px) and (max-width: 640px) {
+a.navbar-brand {
+	margin-top: -10px;
+}
+
+a.navbar-brand small {
+	display: none
+}
+
+footer {
+	padding: 0 15px;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
 	#header {
 		padding-top: 15px;
 	}
@@ -36,7 +32,7 @@
 	}
 }
 
-@media only screen and (min-width: 640px) and (max-width: 800px) {
+@media only screen and (min-width: 768px) and (max-width: 992px) {
 	#header {
 		padding-top: 20px;
 	}
@@ -45,7 +41,7 @@
 	}
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 992px) {
 	#header {
 		padding-top: 30px;
 	}
@@ -54,7 +50,7 @@
 	}
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 992px) {
 	body {
 		padding-bottom: 10px;
 	}
@@ -64,12 +60,15 @@
 	}
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 768px) {
 	.container {
 		padding: 20px;
 	}
 	h1 {
 		margin-top: 20px;
+	}
+	h4 {
+		margin: 10px;
 	}
 	.propic {
 		border-radius: 0;
@@ -84,20 +83,16 @@
 	.secicon.fa {
 		margin: 10px 0;
 	}
-	.year,
 	.mobmid {
 		text-align: center;
 	}
-}
-
-@media only screen and (width: 480px) {
-	footer {
-		padding: 0 100px;
+	#affiliations p {
+		margin: 0 auto;
 	}
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (width: 768px) {
 	footer {
-		padding: 0 15px;
+		padding: 0 100px;
 	}
 }

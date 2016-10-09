@@ -10,12 +10,22 @@ img {
 	max-width: 100%
 }
 
+
 a.navbar-brand {
 	display: inline-block
 }
 
-.propic {
+#propic {
 	border-radius: 10px;
+}
+
+#propic_container {
+	max-width: 200px;
+}
+
+#propic_small {
+	width: 40px;
+	padding-right: 10px;
 }
 
 .mobmid hr {
@@ -67,6 +77,10 @@ a {
 	font-size: 16px;
 }
 
+#affiliations p {
+	max-width: 200px;
+}
+
 li {
 	padding: 7px 0;
 }
@@ -110,6 +124,12 @@ blockquote {
 .year,
 .share {
 	text-align: right;
+}
+
+#header h4,
+.mainleft p,
+.mainright p {
+	text-align: justify;
 }
 
 footer p,

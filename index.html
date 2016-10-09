@@ -23,7 +23,7 @@
     =========================== -->
 	<link href='https://fonts.googleapis.com/css?family=Kristi|Alegreya+Sans:300' rel='stylesheet' type='text/css'>
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/academicons.css" />
+	<link rel="stylesheet" href="css/academicons.min.css" />
 
 
 	<!--[if IE]>
@@ -39,16 +39,14 @@
         ============================ -->
 		<div id="header" class="row">
 			<div class="col-xs-4 col-sm-2">
-				<img class="propic" src="https://avatars2.githubusercontent.com/u/22683052" alt="profile picture">
+				<p id="propic_container"><img id="propic" src="https://avatars2.githubusercontent.com/u/22683052" alt="profile picture"></p>
 			</div>
 			<!-- photo end-->
 
 			<div class="col-sm-8">
-				<div class="cv-title">
-					<div class="row">
-						<div class="col-sm-18">
-							<h1>Luc&nbsp;Jaulmes<wbr><small>PhD&nbsp;student at the <a href="https://www.bsc.es">Barcelona Supercomputing Center</a></small></h1>
-						</div>
+				<div class="row cv-title">
+					<div class="col-sm-12">
+						<h1>Luc&nbsp;Jaulmes <wbr><small>PhD&nbsp;student at the <a href="https://www.bsc.es">Barcelona Supercomputing Center</a></small></h1>
 					</div>
 				</div>
 				<!-- Title end-->
@@ -61,27 +59,27 @@
                 SOCIAL & CONTACT
                 ============================ -->
 				<div class="row">
-					<div class="col-xs-10 col-sm-3 col-md-4">
+					<div class="col-xs-10 col-sm-3 col-md-4 col-xl-2">
 						<a href="https://www.bsc.es/about-bsc/staff-directory/jaulmes-luc"><span class="social fa fa-home"></span>BSC</a>
 					</div>
 
-					<div class="col-xs-10 col-sm-3 col-md-4">
+					<div class="col-xs-10 col-sm-3 col-md-4 col-xl-2">
 						<a href="https://github.com/LucJaulmes"><span class="social fa fa-github"></span>GitHub</a>
 					</div>
 
-					<div class="col-xs-10 col-sm-6 col-md-4">
+					<div class="col-xs-10 col-sm-6 col-md-4 col-xl-2">
 						<a href="https://scholar.google.com/citations?user=S1UQm-sAAAAJ"><span class="social fa ai ai-google-scholar"></span>Google&nbsp;Scholar</a>
 					</div>
 
-					<div class="col-xs-10 col-sm-3 col-md-4">
+					<div class="col-xs-10 col-sm-3 col-md-4 col-xl-2">
 						<a href="http://dblp.uni-trier.de/pers/j/Jaulmes:Luc"><img src="img/dblp.png" width="20" />dblp</a>
 					</div>
 
-					<div class="col-xs-10 col-sm-3 col-md-4">
+					<div class="col-xs-10 col-sm-3 col-md-4 col-xl-2">
 						<a href="https://www.hipeac.net/~lucjaulmes/"><img src="img/hipeac.png" width="20" />HiPEAC</a>
 					</div>
 
-					<div class="col-xs-10 col-sm-6 col-md-4">
+					<div class="col-xs-10 col-sm-6 col-md-4 col-xl-2">
 						<a href="mailto:luc.jaulmes@bsc.es"><span class="social fa fa-envelope-o"></span>luc.jaulmes@bsc.es</a>
 					</div>
 				</div>
@@ -96,11 +94,11 @@
 			</div>
 			<!-- header right end-->
 
-			<div class="col-xs-4 col-sm-2 col-md-2 text-center">
+			<div class="col-xs-12 col-sm-2 mobmid" id="affiliations">
 				<p>Affiliations</p>
-				<p><a title="BSC" href="https://www.bsc.es"><img alt="BSC logo" src="img/bsc.svg" alt="profile picture"></a></p>
-				<p><a title="UPC" href="https://www.upc.edu"><img alt="UPC logo" src="img/upc.png" alt="profile picture"></a></p>
-				<p><a title="RoMoL" href="https://www.bsc.es/romol"><img alt="RoMoL logo" src="img/romol.svg" alt="profile picture"></a></p>
+				<p><a title="BSC" href="https://www.bsc.es"><img alt="BSC logo" src="img/bsc.svg"></a></p>
+				<p><a title="UPC" href="https://www.upc.edu"><img alt="UPC logo" src="img/upc.png"></a></p>
+				<p><a title="RoMoL" href="https://www.bsc.es/romol"><img alt="RoMoL logo" src="img/romol.svg"></a></p>
 				</p>
 			</div>
 		</div>
@@ -116,7 +114,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-					<a class="navbar-brand" href="#"><span><img class="propic" src="https://avatars2.githubusercontent.com/u/22683052" alt="profile picture" width="40" /></span><strong>Luc&nbsp;Jaulmes</strong><small>,<wbr>PhD&nbsp;student<br>at&nbsp;BSC</small></a>
+					<a class="navbar-brand" href="#"><span><img id="propic_small" src="https://avatars2.githubusercontent.com/u/22683052" alt="profile picture" /></span><strong>Luc&nbsp;Jaulmes</strong><small>, PhD&nbsp;student at&nbsp;BSC</small></a>
 				</div>
 
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -134,14 +132,14 @@
 		============================ -->
 		<div class="col-md-8 mainleft">
 
-			<div id="publications" class="row mobmid">
-				<div class="col-sm-1">
+			<div id="publications" class="row">
+				<div class="col-sm-1 mobmid">
 					<span class="secicon fa fa-file-text"></span>
 				</div>
 				<!--icon end-->
 
 				<div class="col-sm-11 publication_list">
-					<h3>Publications</h3>
+					<h3 class="mobmid">Publications</h3>
 
 					<div class="row">
 						<div class="col-md-11">
@@ -155,40 +153,7 @@
 
 					<div class="row">
 						<div class="col-md-11">
-							<p><strong>Exploiting Asynchrony Recoveries for DUE in Ierative Solvers</strong>, <strong>Luc Jaulmes</strong>, Marc Casas, Miquel Moretó, Eduard Ayguadé, Jesús Labarta, Mateo Valero, <em>SC 2015</em>
-								<a href="http://dx.doi.org/10.1145/2807591.2807599">[10.1145/2807591.2807599]</a>
-								<br />
-								<span class="fa fa-trophy"></span>&nbsp;<strong>Best paper finalist</strong> &nbsp;
-								<a href="http://sc15.supercomputing.org/conference-program/technical-program/papers/best-student-paper-and-paper-finalists.html"><span class="fa fa-external-link"></span></a>
-							</p>
-						</div>
-					</div>
-
-					<hr>
-
-					<div class="row">
-						<div class="col-md-11">
-							<p><strong>Fast modulo 2<sup>n</sup>-1 and 2<sup>n</sup>+1 adder using carry-chain on FPGA</strong>, Laurent-Stephane Didier, <strong>Luc Jaulmes</strong>, <em>ACSSC 2013</em>
-								<a href="http://dx.doi.org/10.1109/ACSSC.2013.6810475">[10.1109/ACSSC.2013.6810475]</a>
-							</p>
-						</div>
-					</div>
-
-					<hr>
-
-					<div class="row">
-						<div class="col-md-11">
-							<p><strong>Runtime-Aware Architectures</strong>, Marc Casas, Miquel Moretó, Lluc Alvarez, Emilio Castillo, Dimitrios Chasapis, Timothy Hayes, <strong>Luc Jaulmes</strong>, Oscar Palomar, Osman S. Unsal, Adrián Cristal, Eduard Ayguadé, Jesús Labarta, Mateo Valero, <em>Euro-Par 2015</em>
-								<a href="http://dx.doi.org/10.1007/978-3-662-48096-0_2">[10.1007/978-3-662-48096-0_2]</a>
-							</p>
-						</div>
-					</div>
-
-					<hr>
-
-					<div class="row">
-						<div class="col-md-11">
-							<p><strong>Exploiting Asynchrony Recoveries for DUE in Ierative Solvers</strong>, <strong>Luc Jaulmes</strong>, Marc Casas, Miquel Moretó, Eduard Ayguadé, Jesús Labarta, Mateo Valero, <em>SC 2015</em>
+							<p><strong>Exploiting Asynchrony Recoveries for DUE in Iterative Solvers</strong>, <strong>Luc Jaulmes</strong>, Marc Casas, Miquel Moretó, Eduard Ayguadé, Jesús Labarta, Mateo Valero, <em>SC 2015</em>
 								<a href="http://dx.doi.org/10.1145/2807591.2807599">[10.1145/2807591.2807599]</a>
 								<br />
 								<span class="fa fa-trophy"></span>&nbsp;<strong>Best paper finalist</strong> &nbsp;
@@ -234,14 +199,14 @@
         </div>
         -->
 
-			<div id="education" class="row mobmid">
-				<div class="col-sm-1">
+			<div id="education" class="row">
+				<div class="col-sm-1 mobmid">
 					<span class="secicon fa fa-graduation-cap"></span>
 				</div>
 				<!--icon end-->
 
 				<div class="col-sm-11">
-					<h3>Education</h3>
+					<h3 class="mobmid">Education</h3>
 
 					<div class="row">
 						<div class="col-md-11">
@@ -277,8 +242,8 @@
 	</div>
 
 	<!--necessary scripts and plugins-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" />
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js" />
 	<script>
 		$('body').on('activate.bs.scrollspy', function ()
 		{
