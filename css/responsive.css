@@ -4,10 +4,6 @@
 	padding-top: 10px;
 }
 
-body {
-	padding: 0px 20px 0px 20px;
-}
-
 a.navbar-brand {
 	margin-top: -10px;
 }
@@ -16,8 +12,14 @@ a.navbar-brand small {
 	display: none
 }
 
-footer {
-	padding: 0 15px;
+#affiliations p:not(:first-child) {
+	padding-bottom: 5px;
+}
+
+@media only screen and (min-width: 576px) {
+	#affiliations p:not(:first-child) {
+		padding-bottom: 0;
+	}
 }
 
 @media only screen and (min-width: 576px) and (max-width: 768px) {
@@ -27,36 +29,11 @@ footer {
 	a.navbar-brand {
 		margin-top: -10px;
 	}
-	body {
-		padding: 0px 30px 0px 25px;
-	}
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
 	#header {
 		padding-top: 20px;
-	}
-	body {
-		padding: 0px 45px 0px 40px;
-	}
-}
-
-@media only screen and (min-width: 992px) {
-	#header {
-		padding-top: 30px;
-	}
-	body {
-		padding: 0px 75px 0px 60px;
-	}
-}
-
-@media only screen and (max-width: 992px) {
-	body {
-		padding-bottom: 10px;
-	}
-	.container {
-		margin-top: 10px;
-		margin-bottom: 30px;
 	}
 }
 
@@ -91,8 +68,15 @@ footer {
 	}
 }
 
-@media only screen and (width: 768px) {
-	footer {
-		padding: 0 100px;
+@media only screen and (max-width: 991px) {
+	.container {
+		margin-top: 10px;
+		margin-bottom: 30px;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	#header {
+		padding-top: 30px;
 	}
 }
