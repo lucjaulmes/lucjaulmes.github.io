@@ -132,6 +132,10 @@ blockquote {
 .mainleft p,
 .mainright p {
 	text-align: justify;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
 }
 
 footer p {
