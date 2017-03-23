@@ -16,9 +16,24 @@ a.navbar-brand small {
 	padding-bottom: 5px;
 }
 
+hr#topright {
+	display: none;
+	margin: 0;
+}
+
 @media only screen and (min-width: 576px) {
 	#affiliations p:not(:first-child) {
 		padding-bottom: 0;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	hr#topright {
+		display: block;
+	}
+
+	.mainleft {
+		padding-right: 30px;
 	}
 }
 
@@ -28,6 +43,13 @@ a.navbar-brand small {
 	}
 	a.navbar-brand {
 		margin-top: -10px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.content {
+		margin-left: 0;
+		margin-right: 0;
 	}
 }
 
@@ -54,9 +76,6 @@ a.navbar-brand small {
 		border-bottom: 1px solid #efefef;
 		padding: 15px 0;
 	}
-	.firsthr {
-		visibility: hidden;
-	}
 	.secicon.fa {
 		margin: 10px 0;
 	}
@@ -78,5 +97,8 @@ a.navbar-brand small {
 @media only screen and (min-width: 992px) {
 	#header {
 		padding-top: 30px;
+	}
+	hr#topright {
+		margin-top: 44px;
 	}
 }

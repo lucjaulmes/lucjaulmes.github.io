@@ -25,6 +25,12 @@
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/academicons.min.css" />
 
+	<!-- ===========================
+    SCRIPTS
+    =========================== -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="js/responsive-tabs.js"></script>
 
 	<!--[if IE]>
         <script src="https:https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -32,7 +38,7 @@
     <![endif]-->
 </head>
 
-<body data-spy="scroll" data-target="#navbar" lang="en">
+<body lang="en">
 	<div id="wrap">
 		<!-- ===========================
         HEADER
@@ -104,81 +110,72 @@
 		</div>
 		<!-- header end-->
 
-		<hr class="firsthr">
-		<nav id="navbar" class="navbar navbar-default navbar-fixed-top collapse">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-					<a class="navbar-brand" href="#"><span><img id="propic_small" src="https://avatars2.githubusercontent.com/u/22683052" alt="profile picture" /></span><strong>Luc&nbsp;Jaulmes</strong><small>, PhD&nbsp;student at&nbsp;BSC</small></a>
-				</div>
-
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav navbar-right">
-						<li><a id="top" href="#header">Top</a></li>
-						<li><a href="#publications">Publications</a></li>
-						<li><a href="#education">Education</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-
 		<!-- ===========================
 		BODY LEFT PART
 		============================ -->
+
 		<div class="col-md-8 mainleft">
+			<ul id="tabNavMain" class="nav nav-tabs responsive">
+				<li class="active"><a data-toggle="tab" href="#publications"><span class="fa fa-file-text"></span>Publications</a></li>
+				<!--<li><a data-toggle="tab" href="#more"><span class="fa fa-youtube-play"></span>More</a></li>-->
+			</ul>
 
-			<div id="publications" class="row">
-				<div class="col-sm-1 mobmid">
-					<span class="secicon fa fa-file-text"></span>
+			<div class="tab-content responsive">
+				<div id="publications" class="row tab-pane active content">
+					<div class="col-sm-1 mobmid">
+						<span class="secicon fa fa-file-text"></span>
+					</div>
+
+					<div class="col-sm-11 publication_list">
+						<h3 class="mobmid">Publications</h3>
+
+						<div class="row">
+							<div class="col-md-11">
+								<p><strong>Runtime-Aware Architectures</strong>, <span class="authors">Marc Casas, Miquel Moretó, Lluc Alvarez, Emilio Castillo, Dimitrios Chasapis, Timothy Hayes, <strong>Luc Jaulmes</strong>, Oscar Palomar, Osman S. Unsal, Adrián Cristal, Eduard Ayguadé, Jesús Labarta, Mateo Valero</span>, <em>Euro-Par 2015</em>
+									<a href="http://dx.doi.org/10.1007/978-3-662-48096-0_2">[10.<wbr>1007<wbr>/978<wbr>-3<wbr>-662<wbr>-48096<wbr>-0_2]</a>
+								</p>
+							</div>
+
+						</div>
+
+						<hr>
+
+						<div class="row">
+							<div class="col-md-11">
+								<p><strong>Exploiting Asynchrony Recoveries for DUE in Iterative Solvers</strong>, <span class="authors"><strong>Luc Jaulmes</strong>, Marc Casas,  Miquel Moretó, Eduard Ayguadé, Jesús Labarta, Mateo Valero</span>, <em>SC 2015</em>
+									<a href="http://dx.doi.org/10.1145/2807591.2807599">[10<wbr>.1145<wbr>/2807591<wbr>.2807599]</a>
+									<a href="https://dl.acm.org/authorize?N07008" title="Article on dl.acm.org"><img src="https://dl.acm.org/images/oa.gif" alt="ACM DL Author-ize service" style="vertical-align:middle"/></a>
+									<br />
+									<span class="fa fa-trophy"></span>&nbsp;<strong>Best paper finalist</strong> &nbsp;
+									<a href="http://sc15.supercomputing.org/conference-program/technical-program/papers/best-student-paper-and-paper-finalists.html"><span class="fa fa-external-link"></span></a>
+								</p>
+							</div>
+						</div>
+
+						<hr>
+
+						<div class="row">
+							<div class="col-md-11">
+								<p><strong>Fast modulo 2<sup>n</sup>-1 and 2<sup>n</sup>+1 adder using carry-chain on FPGA</strong>, <span class="authors">Laurent-Stephane Didier, <strong>Luc Jaulmes</strong></span>, <em>ACSSC 2013</em>
+									<a href="http://dx.doi.org/10.1109/ACSSC.2013.6810475">[10<wbr>.1109<wbr>/ACSSC<wbr>.2013<wbr>.6810475]</a>
+								</p>
+							</div>
+						</div>
+
+					</div>
 				</div>
-				<!--icon end-->
 
-				<div class="col-sm-11 publication_list">
-					<h3 class="mobmid">Publications</h3>
-
-					<div class="row">
-						<div class="col-md-11">
-							<p><strong>Runtime-Aware Architectures</strong>, <span class="authors">Marc Casas, Miquel Moretó, Lluc Alvarez, Emilio Castillo, Dimitrios Chasapis, Timothy Hayes, <strong>Luc Jaulmes</strong>, Oscar Palomar, Osman S. Unsal, Adrián Cristal, Eduard Ayguadé, Jesús Labarta, Mateo Valero</span>, <em>Euro-Par 2015</em>
-								<a href="http://dx.doi.org/10.1007/978-3-662-48096-0_2">[10.<wbr>1007<wbr>/978<wbr>-3<wbr>-662<wbr>-48096<wbr>-0_2]</a>
-							</p>
-						</div>
-					</div>
-
-					<hr>
-
-					<div class="row">
-						<div class="col-md-11">
-							<p><strong>Exploiting Asynchrony Recoveries for DUE in Iterative Solvers</strong>, <span class="authors"><strong>Luc Jaulmes</strong>, Marc Casas,  Miquel Moretó, Eduard Ayguadé, Jesús Labarta, Mateo Valero</span>, <em>SC 2015</em>
-								<a href="http://dx.doi.org/10.1145/2807591.2807599">[10<wbr>.1145<wbr>/2807591<wbr>.2807599]</a>
-								<a href="https://dl.acm.org/authorize?N07008" title="Article on dl.acm.org"><img src="https://dl.acm.org/images/oa.gif" alt="ACM DL Author-ize service" style="vertical-align:middle"/></a>
-								<br />
-								<span class="fa fa-trophy"></span>&nbsp;<strong>Best paper finalist</strong> &nbsp;
-								<a href="http://sc15.supercomputing.org/conference-program/technical-program/papers/best-student-paper-and-paper-finalists.html"><span class="fa fa-external-link"></span></a>
-							</p>
-						</div>
-					</div>
-
-					<hr>
-
-					<div class="row">
-						<div class="col-md-11">
-							<p><strong>Fast modulo 2<sup>n</sup>-1 and 2<sup>n</sup>+1 adder using carry-chain on FPGA</strong>, <span class="authors">Laurent-Stephane Didier, <strong>Luc Jaulmes</strong></span>, <em>ACSSC 2013</em>
-								<a href="http://dx.doi.org/10.1109/ACSSC.2013.6810475">[10<wbr>.1109<wbr>/ACSSC<wbr>.2013<wbr>.6810475]</a>
-							</p>
-						</div>
-					</div>
-
-				</div>
-				<!--Job experiences end-->
+				<!--
+            <div id="more" class="row tab-pane content">
+                <div class="col-sm-1 mobmid">
+                    <span class="secicon fa fa-youtube-play"></span>
+                </div>
+                <div class="col-sm-11 publication_list">
+                    <h3 class="mobmid">More</h3>
+                </div>
+            </div>
+            -->
 			</div>
-			<!--Job experiences end-->
-			<hr />
-
 
 		</div>
 		<!--left end-->
@@ -187,46 +184,52 @@
     SIDEBAR
     =========================== -->
 		<div class="col-md-4 mainright">
-			<!--
-        <div class="row">
-            <div class="col-sm-1 col-md-2 mobmid">
-                <span class="secicon fa fa-calendar"></span>
-            </div>
+			<hr id="topright" />
 
-            <div class="col-sm-11 col-md-10">
-                <h3 class="mobmid">What's new </h3>
+			<ul id="tabNavRight" class="nav nav-tabs responsive">
+				<!--<li><a data-toggle="tab" href="#new"><span class="fa fa-calendar"></span>What's new</a></li>-->
+				<li><a data-toggle="tab" href="#education"><span class="fa fa-graduation-cap"></span>Education</a></li>
+			</ul>
 
+			<div class="tab-content responsive">
+				<!--
+            <div id="new" class="row content tab-pane active">
+                <div class="col-sm-1 mobmid">
+                    <span class="secicon fa fa-calendar"></span>
+                </div>
+
+                <div class="col-sm-11">
+                    <h3 class="mobmid">What's new </h3>
+                    Some recent things here. With a date maybe?
+                </div>
             </div>
-        </div>
         -->
 
-			<div id="education" class="row">
-				<div class="col-sm-1 mobmid">
-					<span class="secicon fa fa-graduation-cap"></span>
-				</div>
-				<!--icon end-->
+				<div id="education" class="row content tab-pane active">
+					<div class="col-sm-1 mobmid">
+						<span class="secicon fa fa-graduation-cap"></span>
+					</div>
+					<!--icon end-->
 
-				<div class="col-sm-11">
-					<h3 class="mobmid">Education</h3>
+					<div class="col-sm-11">
+						<h3 class="mobmid">Education</h3>
 
-					<div class="row">
-						<div class="col-md-11">
-							<h4>PhD in Computer Architecture<small>, est Feb. 2018</small></h4>
-							<p class="sub"><a href="https://www.bsc.es">Barcelona Supercomputing Center (BSC)</a> and <a href="www.upc.edu">Universitat Politecnica de Catalunya</a><br /> On <em>Exploiting Task-Based Programming Models for Resilience</em>.</p>
+						<div class="row">
+							<div class="col-md-11">
+								<h4>PhD in Computer Architecture<small>, est Feb. 2018</small></h4>
+								<p class="sub"><a href="https://www.bsc.es">Barcelona Supercomputing Center (BSC)</a> and <a href="www.upc.edu">Universitat Politecnica de Catalunya</a><br /> On <em>Exploiting Task-Based Programming Models for Resilience</em>.</p>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-11">
+								<h4>MSc in Engineering: Information and Communication Technology<small>, 2015</small></h4>
+								<p class="sub">Double degree from <a href="https://www.kth.se/">KTH, Royal Institute of Technology</a>, Stockholm and <a href="https://www.polytechnique.edu/">École Polytechnique</a>, Paris</p>
+							</div>
 						</div>
 					</div>
-					<!--Education & Certification 1 end-->
-
-					<div class="row">
-						<div class="col-md-11">
-							<h4>MSc in Engineering: Information and Communication Technology<small>, 2015</small></h4>
-							<p class="sub">Double degree from <a href="https://www.kth.se/">KTH, Royal Institute of Technology</a>, Stockholm and <a href="https://www.polytechnique.edu/">École Polytechnique</a>, Paris</p>
-						</div>
-					</div>
-					<!--Education & Certification 2 end-->
 				</div>
 			</div>
-			<!--Education & Certifications end-->
 		</div>
 		<!--right end-->
 
@@ -243,20 +246,11 @@
 	</div>
 
 	<!--necessary scripts and plugins-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" />
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js" />
 	<script>
-		$('body').on('activate.bs.scrollspy', function ()
+		(function ($)
 		{
-			if ($("#navbar").find('.active').prev().size() == 0)
-			{
-				$("#navbar").collapse('hide');
-			}
-			else
-			{
-				$("#navbar").collapse('show');
-			}
-		}).scrollspy('refresh')
+			fakewaffle.responsiveTabs(['xs']);
+		})(jQuery);
 
 	</script>
 </body>
