@@ -115,10 +115,7 @@
 		============================ -->
 
 		<div class="col-md-8 mainleft">
-			<ul id="tabNavMain" class="nav nav-tabs responsive">
-				<li class="active"><a data-toggle="tab" href="#publications"><span class="fa fa-file-text"></span>Publications</a></li>
-				<!--<li><a data-toggle="tab" href="#more"><span class="fa fa-youtube-play"></span>More</a></li>-->
-			</ul>
+			<ul id="tabNavMain" class="nav nav-tabs responsive"></ul>
 
 			<div class="tab-content responsive">
 				<div id="publications" class="row tab-pane active content">
@@ -186,10 +183,7 @@
 		<div class="col-md-4 mainright">
 			<hr id="topright" />
 
-			<ul id="tabNavRight" class="nav nav-tabs responsive">
-				<!--<li><a data-toggle="tab" href="#new"><span class="fa fa-calendar"></span>What's new</a></li>-->
-				<li><a data-toggle="tab" href="#education"><span class="fa fa-graduation-cap"></span>Education</a></li>
-			</ul>
+			<ul id="tabNavRight" class="nav nav-tabs responsive"></ul>
 
 			<div class="tab-content responsive">
 				<!--
@@ -247,8 +241,24 @@
 
 	<!--necessary scripts and plugins-->
 	<script>
+		function populateNavTabs(nav)
+		{
+			content = nav.next().children().each(function (n, obj)
+			{
+				var icon = $(obj).find('span.secicon').attr('class').split(' ').filter(function (s)
+				{
+					return s.startsWith('fa-')
+				}).join(' ');
+				var link = $('<a></a>').attr('data-toggle', 'tab').attr('href', '#' + $(obj).attr('id')).append(
+					$('<span></span>').addClass('fa').addClass(icon)
+				).append($(obj).find('h3').text());
+				$('<li></li>').addClass(n == 0 ? 'active' : '').append(link).appendTo(nav)
+			})
+		}
 		(function ($)
 		{
+			populateNavTabs($('ul#tabNavMain'));
+			populateNavTabs($('ul#tabNavRight'));
 			fakewaffle.responsiveTabs(['xs']);
 		})(jQuery);
 
