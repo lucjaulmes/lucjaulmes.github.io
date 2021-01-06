@@ -99,6 +99,16 @@ a {
 	font-size: 16px;
 }
 
+.mainleft .tab-content div:not(.section-header) > p {
+	padding-left: 45px;
+	text-indent: -30px;
+}
+
+.section-header p, .section-header p * {
+	line-height: 1.4em;
+	font-size: 14px;
+}
+
 /* paragraphs containing the affiliation logos */
 
 #affiliations p:not(:first-child) {
@@ -112,6 +122,7 @@ a {
 
 .fa {
 	margin-right: 10px;
+	text-indent: 0;
 }
 
 .secicon.fa {
@@ -122,10 +133,7 @@ a {
 
 .sub {
 	margin-bottom: 15px;
-}
-
-.award {
-	padding-top: 20px;
+	margin-left: 15px;
 }
 
 blockquote {
