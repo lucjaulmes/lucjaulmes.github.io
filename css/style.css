@@ -120,9 +120,17 @@ a {
 	margin-right: 7px;
 }
 
-.fa {
-	margin-right: 10px;
+.tab-content .ai, .tab-content .fa {
+	margin: 0 3px;
 	text-indent: 0;
+}
+
+.tab-content .fa.fa-trophy {
+	margin-left: 0;
+}
+
+.nav-tabs .fa {
+	margin-right: 10px;
 }
 
 .secicon.fa {
