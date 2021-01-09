@@ -35,6 +35,10 @@ hr#topright {
 	.mainleft {
 		padding-right: 30px;
 	}
+
+	.mainright {
+		margin-top: 44px;
+	}
 }
 
 @media only screen and (min-width: 576px) and (max-width: 768px) {
@@ -97,8 +101,5 @@ hr#topright {
 @media only screen and (min-width: 992px) {
 	#header {
 		padding-top: 30px;
-	}
-	hr#topright {
-		margin-top: 44px;
 	}
 }
