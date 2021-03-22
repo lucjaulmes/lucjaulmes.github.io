@@ -215,7 +215,12 @@ div.panel-heading {
 #tabNavMain {
 	white-space: nowrap;
 }
+
 #tabNavMain > li {
 	float: none;
 	display: inline-block;
+}
+
+.other-covid-papers ul {
+	padding-left: 45px;
 }
