@@ -28,8 +28,8 @@ img {
 #propic { aspect-ratio: 363 / 363 }
 img[src="img/ERI.png"] { aspect-ratio: 855 / 173 }
 img[src="img/hipeac.png"] { aspect-ratio: 512 / 512 }
-img[src="img/icsa_dark.png"] { aspect-ratio: 1055 / 206 }
-img[src="img/icsa.png"] { aspect-ratio: 1055 / 206 }
+img[src="img/icsa_dark.svg"] { aspect-ratio: 1055 / 206 }
+img[src="img/icsa.svg"] { aspect-ratio: 1055 / 206 }
 img[src="img/SDH_dark.png"] { aspect-ratio: 855 / 173 }
 img[src="img/SDH.png"] { aspect-ratio: 855 / 173 }
 img[src="img/UoEInfo_dark.svg"] { aspect-ratio: 1200 / 300 }
